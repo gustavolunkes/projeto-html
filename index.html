@@ -3,57 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de Tag Aside</title>
-    <style>
-
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-        main, aside {
-            display: inline-block;
-            vertical-align: top;
-            width: 45%;
-            padding: 20px;
-        }
-        main {
-            background-color: #f0f0f0;
-        }
-        aside {
-            background-color: #e0e0e0;
-        }
-        @media only screen and (max-width: 600px) {
-            main, aside {
-                display: block;
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -61,25 +11,65 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
+            <li class="home1"><a href="#">Home</a></li>
+            <li class="sobre1"><a href="#">Sobre</a></li>
+            <li class="Serviços1"><a href="#">Serviços</a></li>
+            <li class="contato1"><a href="contatoindex.html">Contato</a></li>
         </ul>
     </nav>
     <main>
         <h2>Main Content</h2>
-        <p>This is the main content of the page.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a erat fermentum, hendrerit tellus ac, accumsan arcu. Quisque faucibus mauris a interdum fermentum. Aenean justo lacus, venenatis id fringilla quis, iaculis quis orci. Donec magna risus, tincidunt eget tempor vitae, rutrum sed orci. Ut gravida, ante at placerat mollis, odio magna tincidunt nulla, at suscipit lacus dolor eu lorem. Sed vulputate sagittis justo, id ornare eros rutrum ac. Proin quis lectus vitae nisl aliquam posuere ac eu magna. Duis lobortis mattis lacinia. Cras aliquam in justo a vulputate. Vestibulum tristique consectetur elit at pulvinar. Suspendisse ipsum felis, feugiat non viverra vitae, tincidunt sit amet nulla. Sed egestas maximus nunc, in finibus quam ultrices mattis. Fusce viverra nisl sit amet fermentum laoreet. Nunc fermentum neque justo, sit amet sodales magna congue non.
+        <p>Espaço reservado para um artigo no conteudo principal </p>
+        <section class="section">
+            <h2>Section 1</h2>
+            <p>espaço reservado para seção 1</p>
+        </section>
+        
+            <section>
+                <div class="slider">
+    
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+    
+                        <div class="slide first">
+                            <img src="https://files.tecnoblog.net/wp-content/uploads/2022/09/stable-diffusion-imagem.jpg"
+                                alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOJtnAOvFTDSlExfgQj6SSQEikplOFnXcSjfclzr5T6zZUbYyLdVIoFgIL5ZjV43XNwLA&usqp=CAU" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://s2-valor.glbimg.com/liAB8foTKQQ29eBML_Aoehi_rL4=/0x144:1024x1024/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2023/a/N/DEIdeDR6KhCixtkhVPIQ/anastronautridingahorseinaphotorealisticstyle6.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="navigation-bar">
+                        <label class="manual-btn" for="radio1"></label>
+                        <label class="manual-btn" for="radio2"></label>
+                        <label class="manual-btn" for="radio3"></label>
+                    </div>
+    
+                </div>
+            </section>
+        </section>
 
-            Morbi tincidunt turpis eget ante scelerisque, sed fringilla dolor rhoncus. Curabitur tincidunt orci leo, et venenatis nunc scelerisque nec. Aenean id augue massa. Nulla nisi magna, venenatis eget nisl vestibulum, aliquam interdum ante. Sed mollis auctor erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quis sollicitudin massa. Sed vel ligula vitae est dignissim cursus. Nullam vitae pretium metus. Donec cursus, dolor sed rhoncus rhoncus, nibh diam hendrerit urna, non eleifend nisi mi et nunc. Curabitur pretium, quam vitae egestas rutrum, nulla mauris iaculis metus, venenatis faucibus nisl metus sit amet odio. Praesent tristique erat vel sollicitudin posuere. Aliquam sagittis lacus a ullamcorper luctus.</p>
+
     </main>
     <aside>
-        <h2>Aside Content</h2>
-        <p>This is the aside content of the page.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a erat fermentum, hendrerit tellus ac, accumsan arcu. Quisque faucibus mauris a interdum fermentum. Aenean justo lacus, venenatis id fringilla quis, iaculis quis orci. Donec magna risus, tincidunt eget tempor vitae, rutrum sed orci. Ut gravida, ante at placerat mollis, odio magna tincidunt nulla, at suscipit lacus dolor eu lorem. Sed vulputate sagittis justo, id ornare eros rutrum ac. Proin quis lectus vitae nisl aliquam posuere ac eu magna. Duis lobortis mattis lacinia. Cras aliquam in justo a vulputate. Vestibulum tristique consectetur elit at pulvinar. Suspendisse ipsum felis, feugiat non viverra vitae, tincidunt sit amet nulla. Sed egestas maximus nunc, in finibus quam ultrices mattis. Fusce viverra nisl sit amet fermentum laoreet. Nunc fermentum neque justo, sit amet sodales magna congue non.
-
-            Morbi tincidunt turpis eget ante scelerisque, sed fringilla dolor rhoncus. Curabitur tincidunt orci leo, et venenatis nunc scelerisque nec. Aenean id augue massa. Nulla nisi magna, venenatis eget nisl vestibulum, aliquam interdum ante. Sed mollis auctor erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quis sollicitudin massa. Sed vel ligula vitae est dignissim cursus. Nullam vitae pretium metus. Donec cursus, dolor sed rhoncus rhoncus, nibh diam hendrerit urna, non eleifend nisi mi et nunc. Curabitur pretium, quam vitae egestas rutrum, nulla mauris iaculis metus, venenatis faucibus nisl metus sit amet odio. Praesent tristique erat vel sollicitudin posuere. Aliquam sagittis lacus a ullamcorper luctus.</p>
+        <h2>topicos</h2>
+        <ul>
+            <li class="menuia"><a href="">topico 1</a></li>
+            <li class="menuia"><a href="">topico 2</a></li>
+            <li class="menuia"><a href="">topico 3</a></li>
+        </ul>
+        <h2>links importantes</h2>
+        <ul>
+            <li class="menuia"><a href="">google</a></li>
+            <li class="menuia"><a href="">github</a></li>
+            <li class="menuia"><a href="">linkedin</a></li>
+        </ul>
     </aside>
     <footer>
         <h2>Footer</h2>
