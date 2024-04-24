@@ -1,9 +1,5 @@
 
 
-
-
-
-
 nav {
     background-color: #444;
     color: #fff;
@@ -14,7 +10,6 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-left: 690px
 }
 nav ul li {
     display: inline;
@@ -34,7 +29,7 @@ body {
 header, footer {
     background-color: #333;
     color: #fff;
-    padding: 5px;
+    padding: 10px;
 }
 main, aside {
     display: inline-block;
@@ -158,14 +153,6 @@ input{
 .altura-asisde{
     width: 110%;
 }
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 600px) {
     main, aside {

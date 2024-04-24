@@ -31,7 +31,7 @@ form{
     margin: 50px ;
     padding: 20px;
     width: 100%;
-
+    
 }
 form label{
     display: block;
@@ -44,11 +44,43 @@ form input{
     padding: 10 15px;
     width: 50%;
 }
-.deixeaqui{
-    display: block;
-    font-size: 150px;
-}
 
-.enviarformulario{
-    font-size: 20px;
-}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  th {
+    background-color: #4a4852;
+    color: white;
+  }
+  
+
+  tr:hover {
+    background-color: #ddd;
+  }
+  tr:focus {
+    background-color: #ccc;
+  }
+  
+  .titulotabela {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    table {
+      width: 100%;
+    }
+    th, td {
+      display: block;
+    }
+  }
+  
